@@ -1,0 +1,218 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #272131;
+  color: #fff;
+  padding: 2px 0;
+  font-size: 12px;
+
+}
+
+.top-nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #fff;
+  position: fixed;
+  top: 38px;
+  width: 100vw;
+}
+
+.brand {
+  padding-left: 8rem;
+  font-size: 2rem;
+  color: #ec5242;
+}
+
+.main-nav-menu {
+  background-color: #fff;
+}
+
+.nav-link {
+  list-style: none;
+  margin-left: 4rem;
+  font-size: 1rem;
+}
+
+.active-link {
+  color: #ec5242;
+}
+
+.register {
+  border: 2px solid #ec5242;
+  color: #ec5242;
+  padding: 6px 12px;
+}
+
+.main {
+  width: 100vw;
+  /* background-color: #d3d3d3; */
+  position: absolute;
+  z-index: -1;
+}
+
+.top-section {
+  padding: 8rem;
+  background-color: #d3d3d3;
+}
+
+.summit-qoute {
+  font-size: 2rem;
+  line-height: 8px;
+  color: #ec5242;
+}
+
+.summit-title {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ec5242;
+  line-height: 80px;
+  max-width: 80%;
+}
+
+.summit-intro {
+  font-size: 1rem;
+  max-width: 50%;
+  padding-left: 26px;
+}
+
+.summit-date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  line-height: 18px;
+}
+
+.summit-venue {
+  font-size: 1.4rem;
+  color: #474545;
+  line-height: 8px;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272131;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+hr {
+  width: 48px;
+  border-color: #ec5242;
+  margin-top: -24px;
+}
+
+.program-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #383b42;
+  max-width: 200px;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.card-title {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ec5242;
+}
+
+.program-card > p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-top: -14px;
+  max-width: 160px;
+}
+
+.see-more {
+  padding: 38px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.feature-title {
+  color: #383b42;
+  text-align: center;
+}
+
+.grid-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+  padding: 4rem 10rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-picture {
+  margin-right: 18px;
+}
+
+.speaker-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.speaker-title {
+  margin-top: -20px;;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #ec5242;
+}
+
+.speaker-bio {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
