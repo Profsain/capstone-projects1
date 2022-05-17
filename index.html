@@ -13,7 +13,6 @@
     ></script>
     <!-- Google font -->
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
-    `
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,22 +25,39 @@
     <header class="header">
       <div class="top-nav">
         <ul class="top-nav-menu">
-          <li class="nav-items"><i class="fa fa-facebook"></i></li>
-          <li class="nav-items"><i class="fa fa-twitter"></i></li>
-          <li class="nav-items">English</li>
-          <li class="nav-items">My page</li>
-          <li class="nav-items">Logout</li>
+          <li class="nav-items"><a class="top-link" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="nav-items"><a class="top-link" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="nav-items"><a class="top-link" href="#">English</a></li>
+          <li class="nav-items"><a class="top-link" href="#home-section">My page</a></li>
+          <li class="nav-items"><a class="top-link" href="#">Logout</a></li>
         </ul>
       </div>
       <div class="main-nav">
-        <div class="brand">MicronautsTS..</div>
+        <div><a class="brand" href="#home-section">MicronautsTS..</a></div>
         <ul class="main-nav-menu top-nav-menu">
-          <li class="nav-link active-link">About</li>
-          <li class="nav-link">Program</li>
-          <li class="nav-link">Join</li>
-          <li class="nav-link">Sponsor</li>
-          <li class="nav-link">News</li>
-          <li class="nav-link register">Register</li>
+          <li><a class="nav-link" href="pages/about.html">About</a></li>
+          <li><a class="nav-link" href="#main-program">Program</a></li>
+          <li><a class="nav-link" href="#">Join</a></li>
+          <li><a class="nav-link" href="#speakers-section">Sponsor</a></li>
+          <li><a class="nav-link" href="#">News</a></li>
+          <li><a class="nav-link register" href="#">Register</a></li>
+        </ul>
+      </div>
+      <!-- mobile nav menu -->
+      <div id="mobile-container">
+        <div id="hamburger-icon">
+          <div class="bar1 bars"></div>
+          <div class="bar2 bars"></div>
+          <div class="bar3 bars"></div>
+        </div>
+        <ul class="mobile-menu">
+          <li><a class="nav-link mobile-nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link mobile-nav-link" href="pages/about.html">About</a></li>
+          <li><a class="nav-link mobile-nav-link" href="#main-program">Program</a></li>
+          <li><a class="nav-link mobile-nav-link" href="#">Join</a></li>
+          <li><a class="nav-link mobile-nav-link" href="#speakers-section">Sponsor</a></li>
+          <li><a class="nav-link mobile-nav-link" href="#">News</a></li>
+          <li><a class="nav-link register mobile-nav-link" href="#">Register</a></li>
         </ul>
       </div>
     </header>
@@ -51,7 +67,7 @@
         <h1 class="summit-title">Micronauts Global Tech Summit 2022</h1>
         <p class="summit-intro">
           Microverse alumni community connect conference. Celebrating learning
-          mothodology with a diverse, driven community, and connect to
+          mothodology with a diverse, driven community, and connecting to
           life-changing opportunities.
         </p>
         <h3 class="summit-date">2022.05.26(THUR) ~ 28(SAT)</h3>
@@ -106,7 +122,7 @@
         <p class="see-more">See More Activities</p>
       </div>
       <!-- Featured speakers -->
-      <div class="speakers-section">
+      <div class="speakers-section" id="speakers-section">
         <h3 class="section-title feature-title">Feature Speakers</h3>
         <hr />
         <div class="grid-column">
@@ -217,10 +233,27 @@
       <!-- partners section -->
       <div class="partners-section">
         <h3 class="section-title">Our Global Partners</h3>
+        <hr>
         <div class="partners-logo">
-          
+            <div><img class="logo-img" src="assets/images/logo/huawai.svg" alt="huawei-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/globant.png" alt="globant-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/freshword.svg" alt="freshword-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/hsbc.svg" alt="hsbc-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/magmalabs.svg" alt="magmalabs-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/mediamon.svg" alt="mediamon-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/mercado.svg" alt="mercado-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/microsoft.svg" alt="microsoft-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/outlier.svg" alt="outlier-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/standford.svg" alt="standford-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/vmware.svg" alt="vmware-logo"></div>
+            <div><img class="logo-img" src="assets/images/logo/a[[teguu.svg" alt="apptegu-logo"></div>
         </div>
       </div>
+      <!-- footer section -->
+      <div class="footer-section">
+        <p class="footer-text">&#169;2022 Micronauts Summit. No Right Reserverd | Profsain Hussein</p>
+      </div>
     </main>
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
