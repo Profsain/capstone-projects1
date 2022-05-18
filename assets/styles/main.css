@@ -126,7 +126,6 @@ a {
   width: 100%;
   background-color: #fff;
   transition: 0.5s ease-in-out;
-  transform: translateZ(-10%);
 }
 
 .open > li {
@@ -495,7 +494,7 @@ hr {
 
   .program-card > p {
     font-size: 1.5rem;
-    max-width: fit-content;
+    max-width: 100%;
   }
 
   .grid-column {
@@ -522,7 +521,7 @@ hr {
   .footer-text {
     font-size: 1.2rem;
   }
-  
+
   .contact-section {
     flex-direction: column;
     justify-content: flex-start;
