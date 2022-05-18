@@ -137,7 +137,7 @@ a {
   display: none;
 }
 
-.nav-link:hover {
+.active, .nav-link:hover {
   color: #ec5242;
 }
 
@@ -324,6 +324,95 @@ hr {
   padding-top: 4rem;
 }
 
+/* about page style */
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 7%;
+  text-align: center;
+}
+
+.about-text {
+  box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  padding: 3rem 0;
+  max-width: 95vh;
+}
+.about-text > p {
+  font-size: 1rem;
+  margin-top: -6px;
+  line-height: 28px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4%;
+  background-color: #ec5242;
+}
+
+.contact-info {
+  padding-right: 4%;
+  text-align: left;
+  font-size: 1.5rem;
+  max-width: 50%;
+}
+
+.contact-img {
+  max-width: 50%;
+}
+.contact-img > img {
+  width: auto;
+  height: 300px;
+}
+
+.alumni-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5rem;
+}
+.alumni-sec {
+  color: #272131;
+  padding-top: 3rem;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.alumni-pic > img {
+  border-radius: 50%;
+  box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+  -webkit-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+  -moz-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+}
+
+.alumni-info {
+  line-height: 22px;
+  font-weight: 300;
+  color: #6b6b6b;
+}
+
+.alumni-profile {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a94135;
+}
+
+.about-footer {
+  background-color: #272131;
+  color: #fff;
+  padding-bottom: 3rem;
+}
 @media (max-width: 894px) {
   .header {
     position: fixed;
@@ -415,48 +504,21 @@ hr {
   .footer-text {
     font-size: 1.2rem;
   }
+  
+  .contact-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-img, .contact-info {
+    max-width: 100%;
+    padding: 26px;
+  }
+
+  .alumni-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 28px;
+  }
 }
 
-/* about page style */
-.about-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  padding: 7%;
-  text-align: center;
-}
-
-.about-text {
-  box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
-  -webkit-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
-  -moz-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
-  padding: 3rem 0;
-  max-width: 95vh;
-}
-.about-text > p {
-  font-size: 1rem;
-  margin-top: -6px;
-  line-height: 28px;
-}
-
-.contact-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100vw;
-  height: 70vh;
-  padding: 4%;
-  background-color: #ec5242;
-}
-
-.contact-info {
-  padding-right: 4%;
-  text-align: left;
-  font-size: 1.5rem;
-}
-
-.contact-img > img {
-  width: auto;
-  height: 50%;
-}

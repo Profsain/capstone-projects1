@@ -2,6 +2,9 @@ const hamburgar = document.getElementById('hamburger-icon');
 const mobileMenu = document.querySelector('.mobile-menu')
 const navClose = document.querySelectorAll('.mobile-nav-link');
 
+// const speakers = speakers;
+console.log(speakers)
+
 // Open and close mobile menu bar
 const toggleMobileMenu = () => {
   mobileMenu.classList.toggle('open');
