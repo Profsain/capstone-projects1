@@ -1,0 +1,532 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #272131;
+  color: #fff;
+  padding: 2px 0;
+  font-size: 12px;
+
+}
+
+.top-nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.top-link {
+  margin: 0 8px;
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #fff;
+  position: fixed;
+  top: 38px;
+  width: 100vw;
+}
+
+.brand {
+  padding-left: 8rem;
+  font-size: 2rem;
+  color: #ec5242;
+}
+
+.main-nav-menu {
+  background-color: #fff;
+  padding-right: 28px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #272131;
+  margin-left: 4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  color: #ec5242;
+}
+
+.register {
+  border: 2px solid #ec5242;
+  color: #ec5242;
+  padding: 6px 12px;
+}
+
+/* mobile menu style */
+#mobile-container {
+  padding-right: 4em;
+}
+
+#hamburger-icon {
+  display: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -24px;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.open > li {
+  padding-top: 38px;
+  margin-left: -75px;
+}
+
+.close-nav {
+  display: none;
+}
+
+.active, .nav-link:hover {
+  color: #ec5242;
+}
+
+.main {
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.top-section {
+  padding: 8rem;
+  background-color: #d3d3d3;
+}
+
+.summit-qoute {
+  font-size: 2rem;
+  line-height: 8px;
+  color: #ec5242;
+}
+
+.summit-title {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ec5242;
+  line-height: 80px;
+  max-width: 80%;
+}
+
+.summit-intro {
+  font-size: 1rem;
+  max-width: 50%;
+  padding-left: 26px;
+}
+
+.summit-date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  line-height: 18px;
+}
+
+.summit-venue {
+  font-size: 1.4rem;
+  color: #474545;
+  line-height: 8px;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272131;
+  padding-top: 5rem;
+  padding-right: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+hr {
+  width: 48px;
+  border-color: #ec5242;
+  margin-top: -24px;
+}
+
+.program-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #383b42;
+  max-width: 200px;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.card-title {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ec5242;
+}
+
+.program-card > p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-top: -14px;
+  max-width: 160px;
+}
+
+.see-more {
+  padding: 38px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.feature-title {
+  color: #383b42;
+  text-align: center;
+}
+
+/* speakers section style */
+.grid-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+  padding: 4rem 10rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-picture {
+  margin-right: 18px;
+}
+
+.speaker-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.speaker-title {
+  margin-top: -20px;;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #ec5242;
+}
+
+.speaker-bio {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* parners section style */
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec5242;
+  padding-bottom: 4rem;
+}
+
+.partners-logo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  gap: 24px;
+  padding: 2rem 5rem;
+}
+
+.logo-img {
+  width: 70%;
+  height: 50px;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+/* about page style */
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 7%;
+  text-align: center;
+}
+
+.about-text {
+  box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  padding: 3rem 0;
+  max-width: 95vh;
+}
+.about-text > p {
+  font-size: 1rem;
+  margin-top: -6px;
+  line-height: 28px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4%;
+  background-color: #ec5242;
+}
+
+.contact-info {
+  padding-right: 4%;
+  text-align: left;
+  font-size: 1.5rem;
+  max-width: 50%;
+}
+
+.contact-img {
+  max-width: 50%;
+}
+.contact-img > img {
+  width: auto;
+  height: 300px;
+}
+
+.alumni-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5rem;
+}
+.alumni-sec {
+  color: #272131;
+  padding-top: 3rem;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.alumni-pic > img {
+  border-radius: 50%;
+  box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+  -webkit-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+  -moz-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
+}
+
+.alumni-info {
+  line-height: 22px;
+  font-weight: 300;
+  color: #6b6b6b;
+}
+
+.alumni-profile {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a94135;
+}
+
+.about-footer {
+  background-color: #272131;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+@media (max-width: 894px) {
+  .header {
+    position: fixed;
+    top: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #fff;
+  }
+  #hamburger-icon {
+    display: block;
+    padding: 14px 28px;
+  }
+
+  .top-nav, .main-nav {
+    display: none;
+  }
+
+  .top-section {
+    padding: 2.5rem;
+  }
+
+  .summit-qoute {
+    line-height: normal;
+  }
+
+  .summit-venue {
+    line-height: normal;
+  }
+
+  .summit-title {
+    font-size: 3rem;
+    max-width: fit-content;
+  }
+
+  .summit-intro {
+    font-size: 1.5rem;
+    max-width: max-content;
+  }
+
+  .summit-date {
+    line-height: normal;
+  }
+
+  .program-card-list {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .program-card {
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: none;
+    width: 94%;
+    padding: 18px;
+    margin-top: 14px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    padding: 0 28px;
+  }
+
+  .program-card > p {
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+
+  .grid-column {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  }
+
+  .speaker-name {
+    font-size: 2rem;
+  }
+
+  .speaker-title {
+    font-size: 1.5rem;
+  }
+
+  .speaker-bio {
+    font-size: 1.2rem;
+  }
+
+  .partners-logo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+  }
+  
+  .contact-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-img, .contact-info {
+    max-width: 100%;
+    padding: 26px;
+  }
+
+  .alumni-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 28px;
+  }
+
+  .alumni-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
