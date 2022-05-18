@@ -126,7 +126,7 @@ a {
   width: 100%;
   background-color: #fff;
   transition: 0.5s ease-in-out;
-  transform: translateZ(10%);
+  transform: translateZ(-10%);
 }
 
 .open > li {
@@ -194,7 +194,6 @@ a {
   line-height: 8px;
   transform: translateY(300px);
   opacity: 0;
-
   animation: fadeIn 0.4s ease-in-out 1.5s forwards;
 }
 
@@ -269,7 +268,6 @@ hr {
 
 /* speakers section style */
 .grid-column {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-columns: auto;
@@ -279,7 +277,6 @@ hr {
 }
 
 .speaker-card {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -351,9 +348,9 @@ hr {
 }
 
 .about-text {
-  box-shadow: 4px, -3px, 5px, 0px, #787878;
-  -webkit-box-shadow: 4px, -3px, 5px, 0px, #787878;
-  -moz-box-shadow: 4px, -3px, 5px, 0px, #787878;
+  box-shadow: 4px -3px 5px 0 #787878;
+  -webkit-box-shadow: 4px -3px 5px 0 #787878;
+  -moz-box-shadow: 4px -3px 5px 0 #787878;
   padding: 3rem 0;
   max-width: 95vh;
 }
@@ -382,6 +379,7 @@ hr {
 .contact-img {
   max-width: 50%;
 }
+
 .contact-img > img {
   width: auto;
   height: 300px;
@@ -408,9 +406,9 @@ hr {
 
 .alumni-pic > img {
   border-radius: 50%;
-  box-shadow: 7px, -8px, 5px, 0px, #a94135;
-  -webkit-box-shadow: 7px, -8px, 5px, 0px, #a94135;
-  -moz-box-shadow: 7px, -8px, 5px, 0px, #a94135;
+  box-shadow: 7px -8px 5px 0 #a94135;
+  -webkit-box-shadow: 7px -8px 5px 0 #a94135;
+  -moz-box-shadow: 7px -8px 5px 0 #a94135;
 }
 
 .alumni-info {
