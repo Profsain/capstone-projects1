@@ -1,5 +1,5 @@
 const hamburgar = document.getElementById('hamburger-icon');
-const mobileMenu = document.querySelector('.mobile-menu')
+const mobileMenu = document.querySelector('.mobile-menu');
 const navClose = document.querySelectorAll('.mobile-nav-link');
 const speakersGrid = document.querySelector('.grid-column');
 
@@ -20,7 +20,7 @@ const createSpeakersCard = () => {
     speakerBio.classList.add('speaker-bio');
 
     speakerImg.setAttribute('src', speaker.picture);
-    speakerImg.setAttribute('alt', speaker.name)
+    speakerImg.setAttribute('alt', speaker.name);
     speakerName.innerText = speaker.name;
     speakerTitle.innerText = speaker.title;
     speakerBio.innerText = speaker.bio;
@@ -29,11 +29,11 @@ const createSpeakersCard = () => {
     speakerCard.append(speakerImg, detailCard);
     speakersGrid.append(speakerCard);
   });
-}
+};
 
 window.onload = () => {
   createSpeakersCard();
-}
+};
 
 // Open and close mobile menu bar
 const toggleMobileMenu = () => {
