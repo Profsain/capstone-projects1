@@ -126,6 +126,8 @@ a {
   height: 100vh;
   width: 100%;
   background-color: #fff;
+  transition: 0.5s ease-in-out;
+  transform: translateZ(0%);
 }
 
 .open > li {
@@ -165,24 +167,34 @@ a {
   color: #ec5242;
   line-height: 80px;
   max-width: 80%;
+  animation: fadeIn 0.4s ease-in-out;
 }
 
 .summit-intro {
   font-size: 1rem;
   max-width: 50%;
   padding-left: 26px;
+  transform: translateY(300px);
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out 0.5s forwards;
 }
 
 .summit-date {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 2rem;
   line-height: 18px;
+  transform: translateY(300px);
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out 1s forwards;
 }
 
 .summit-venue {
   font-size: 1.4rem;
   color: #474545;
   line-height: 8px;
+  transform: translateY(300px);
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out 1.5s forwards;
 }
 
 .main-program {
@@ -527,6 +539,18 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
