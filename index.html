@@ -22,6 +22,7 @@
   </head>
   <body>
     <header class="header">
+     <nav>
       <div class="top-nav">
         <ul class="top-nav-menu">
           <li class="nav-items"><a class="top-link" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -59,9 +60,10 @@
           <li><a class="nav-link register mobile-nav-link" href="#">Register</a></li>
         </ul>
       </div>
+     </nav>
     </header>
     <main class="main">
-      <div class="top-section" id="home-section">
+      <section class="top-section" id="home-section">
         <p class="summit-qoute">"Changing Life Worldwide"</p>
         <h1 class="summit-title">Micronauts Global Tech Summit 2022</h1>
         <p class="summit-intro">
@@ -71,9 +73,9 @@
         </p>
         <h3 class="summit-date">2022.05.26(THUR) ~ 28(SAT)</h3>
         <p class="summit-venue">@ www.zoom.com/micronaut-summit-2022</p>
-      </div>
+      </section>
       <!-- main program saction -->
-      <div class="main-program" id="main-program">
+      <section class="main-program" id="main-program">
         <h3 class="section-title">Main Activities</h3>
         <hr />
         <div class="program-card-list">
@@ -119,16 +121,18 @@
           </div>
         </div>
         <p class="see-more">See More Activities</p>
-      </div>
+        <button class="join-summit">Join Micronauts Summit</button>
+      </section>
       <!-- Featured speakers -->
-      <div class="speakers-section" id="speakers-section">
+      <section class="speakers-section" id="speakers-section">
         <h3 class="section-title feature-title">Feature Speakers</h3>
         <hr />
         <div class="grid-column">
         </div>
-      </div>
+        <button type="button" class="more-speakers">More <span><i class="fa-solid fa-angle-down"></i></span></button>
+      </section>
       <!-- partners section -->
-      <div class="partners-section">
+      <section class="partners-section">
         <h3 class="section-title">Our Global Partners</h3>
         <hr>
         <div class="partners-logo">
@@ -145,12 +149,12 @@
             <div><img class="logo-img" src="assets/images/logo/vmware.svg" alt="vmware-logo"></div>
             <div><img class="logo-img" src="assets/images/logo/appteguu.svg" alt="apptegu-logo"></div>
         </div>
-      </div>
-      <!-- footer section -->
-      <div class="footer-section">
-        <p class="footer-text">&#169;2022 Micronauts Summit. No Right Reserverd | Profsain Hussein</p>
-      </div>
+      </section>
     </main>
+     <!-- footer section -->
+     <footer class="footer-section">
+      <p class="footer-text">&#169;2022 Micronauts Summit. No Right Reserverd | Profsain Hussein</p>
+    </footer>
     <script src="assets/scripts/database.js"></script>
     <script src="assets/scripts/main.js" type="module"></script>
   </body>
