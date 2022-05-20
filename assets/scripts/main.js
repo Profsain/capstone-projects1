@@ -19,7 +19,7 @@ const createSpeakersCard = () => {
     speakerTitle.classList.add('speaker-title');
     speakerBio.classList.add('speaker-bio');
 
-    speakerCard.setAttribute('id', speaker.id)
+    speakerCard.setAttribute('id', speaker.id);
     speakerImg.setAttribute('src', speaker.picture);
     speakerImg.setAttribute('alt', speaker.name);
     speakerName.innerText = speaker.name;

@@ -150,6 +150,7 @@ a {
 
 .top-section {
   padding: 8rem;
+
   /* background-color: #f1ecec; */
   background-image: url('https://i.postimg.cc/C1W3dxdK/main-big.png');
   background-repeat: no-repeat;
@@ -618,6 +619,7 @@ hr {
   .partners-section {
     display: none;
   }
+  
   .partners-logo {
     grid-template-columns: repeat(3, 1fr);
   }
