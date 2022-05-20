@@ -35,6 +35,9 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 - View the Micronauts Tech Summit details
 
+### Deployment 
+- [Deployed on GitHub page](https://profsain.github.io/capstone-projects1/) 
+
 
 ## Authors
 
