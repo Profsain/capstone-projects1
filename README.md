@@ -1,86 +1,67 @@
-# capstone-projects1
-Microverse Block 1 capstone project to build a mobile responsive conference website.
+# Capstone Project: Micronauts Tech Summit 2022 Website
 
-
-# About The Project
-<img src="assets/images/capstone-project1.png" alt="Project screenshot">
-
-Microverse Block 1 Capstone project: Reponsive Conference website to test HTML, CSS, and JavaScript skills.
-## Project Reqiurement
-- You should personalize the content of your page. Choose a topic that is different than the one in the original design.
-
-- You should follow these design guidelines, including:
-
-- Colors.
-- Typography: font face, size and weight.
-- Layout: composition and space between elements.
-- The pages should look almost identical to the original design. Small adjustments like text or image changes are acceptable.
-
-- You can use a CSS framework (for example Bootstrap) for styling, if you want to.
-
-- You should build only these 2 pages:
-
-- The home page.
-- The about page.
-Each of these pages should have versions for 2 different screen sizes:
-
-Mobile: up to 768px wide.
-Desktop: 768px or wider.
-
-- Interactions
-Links
-The home page should have a link in the menu to the about page.
-The logo in the header links to the home page.
-
-Mobile menu
-When the user clicks (or taps) the hamburger button on the header, the mobile menu appears over the page.
-
-There are no guidelines for the mobile menu in the docs, but you should implement it so it is consistent with the design (colors, typography, spacings, etc.).
-The mobile menu should have a close (X) button that closes the menu.
-
-- Dynamic page
-The section "Featured speakers" should be created dynamically in JavaScript.
-You should use a JavaScript variable with the data about the speakers and use it when the page loads to create the HTML for this section dynamically.
-Original design idea by Cindy Shin in Behance.
-
-# Live Preview
-<a href="https://profsain.github.io/capstone-projects1/index.html">Micronauts Tech Summit 2022</a>
-
-# Built With
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul>
-
-# Getting Started
-To open the project
-<ol>
-<li>Install your favorite Code Editor</li>
-<li>Install your favorite Browser</li>
-<li>Clone the project from github</li>
-<li>Open index.html file in your browser</li>
-</ol>
-
-# Feature
-- Responsive website
+> Responsive website design for Micronauts Tech Summit 2022
+## Feature
 - Home page
 - About page
-- Dynamic Speakers card generation using javascript object
-- Mobile navbar
+- Mobile responsiveness
 
-# Author
-<a href="https://linkedin.com/in/profsain">Husseini Mudi (Profsain)</a>
+## Built With
+- HTML
+- CSS
+- JavaScript
 
-# Contributing
-If you have a suggestion that would make this better, please fork the repo and create a pull request. 
-- You can also open an issue with the tag "ënhancement"
-- Don't forget to give the project a star! Happy Coding
+## Live Demo
 
-# Acknowledgments
-- Appreciate Microverse Team
-- Behance.net for design inspiration
+[Live Demo Link](https://www.loom.com/share/44b632c02fd448be840e19167d4d0d6a)
 
-# Licence
-Distributed under the MIT License. See LICENSE.txt for more information.
 
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+- Text Editor
+- Browser
+- Basic knowledge of HTML, CSS, and JavaScript
+
+### Setup
+- Clone the repo to your local computer [Repo](https://github.com/Profsain/capstone-projects1)
+- Open the clone repo in your favorite Text Editor
+
+### Install
+- open index.html in your favoirte browser
+
+### Usage
+- View the Micronauts Tech Summit details
+
+### Deployment 
+- [Deployed on GitHub page](https://profsain.github.io/capstone-projects1/) 
+
+
+## Authors
+
+👤 **Author1**
+### Husseini Mudi (Profsain)
+- GitHub: [@githubhandle](https://github.com/profsain)
+- Twitter: [@twitterhandle](https://twitter.com/profsain)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Profsain)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Profsain/capstone-projects1/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to Microverse team
+- Hat tip to <a href='https://www.behance.net/adagio07'>Cindy Shin in Behance</a> for design Inspiration
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

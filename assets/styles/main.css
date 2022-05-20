@@ -13,7 +13,6 @@ body {
   color: #fff;
   padding: 2px 0;
   font-size: 12px;
-
 }
 
 .top-nav-menu {
@@ -127,7 +126,6 @@ a {
   width: 100%;
   background-color: #fff;
   transition: 0.5s ease-in-out;
-  transform: translateZ(0%);
 }
 
 .open > li {
@@ -139,19 +137,24 @@ a {
   display: none;
 }
 
-.active, .nav-link:hover {
+.active,
+.nav-link:hover {
   color: #ec5242;
 }
 
 .main {
+  position: relative;
   width: 100vw;
-  position: absolute;
   z-index: -1;
 }
 
 .top-section {
   padding: 8rem;
-  background-color: #d3d3d3;
+
+  /* background-color: #f1ecec; */
+  background-image: url('https://i.postimg.cc/C1W3dxdK/main-big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .summit-qoute {
@@ -204,7 +207,6 @@ a {
   align-items: center;
   background-color: #272131;
   padding-top: 5rem;
-  padding-right: 1rem;
 }
 
 .section-title {
@@ -223,33 +225,33 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 38px;
+  padding: 38px 68px;
 }
 
 .program-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  justify-items: center;
+  padding: 16px;
+  margin: 0 8px;
   background-color: #383b42;
-  max-width: 200px;
-  padding: 8px;
-  margin-left: 8px;
+}
+
+.program-card:hover {
+  border: 1px solid #fff;
 }
 
 .card-title {
   font-size: 1rem;
-  letter-spacing: 2px;
   color: #ec5242;
 }
 
 .program-card > p {
   text-align: center;
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-top: -14px;
-  max-width: 160px;
 }
 
 .see-more {
@@ -261,12 +263,49 @@ hr {
   letter-spacing: 3px;
 }
 
+.join-summit {
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 23px;
+  margin-bottom: 38px;
+  color: #fff;
+  background-color: #ff4f34;
+  border: none;
+}
+
 .feature-title {
   color: #383b42;
   text-align: center;
 }
 
 /* speakers section style */
+.speakers-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-speakers {
+  display: none;
+  width: 80%;
+  border: 1px solid #474545;
+  background-color: #fff;
+  color: #474545;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 28px;
+  margin-bottom: 56px;
+}
+
+.more-speakers > span {
+  color: #ec5242;
+  padding-left: 12px;
+}
+
 .grid-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -285,6 +324,8 @@ hr {
 
 .speaker-picture {
   margin-right: 18px;
+  width: auto;
+  height: auto;
 }
 
 .speaker-name {
@@ -293,7 +334,7 @@ hr {
 }
 
 .speaker-title {
-  margin-top: -20px;;
+  margin-top: -20px;
   font-size: 0.85rem;
   font-weight: 400;
   font-style: italic;
@@ -311,7 +352,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ec5242;
+  background-color: #474543;
   padding-bottom: 4rem;
 }
 
@@ -329,11 +370,16 @@ hr {
   height: 50px;
 }
 
+.about-partners {
+  display: none;
+}
+
 .footer-text {
   font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
-  padding-top: 4rem;
+  padding: 3rem;
+  color: #272131;
 }
 
 /* about page style */
@@ -348,83 +394,115 @@ hr {
 }
 
 .about-text {
-  box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
-  -webkit-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
-  -moz-box-shadow: 4px -3px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px -3px 5px 0 #787878;
+  -webkit-box-shadow: 4px -3px 5px 0 #787878;
+  -moz-box-shadow: 4px -3px 5px 0 #787878;
   padding: 3rem 0;
   max-width: 95vh;
 }
+
 .about-text > p {
   font-size: 1rem;
   margin-top: -6px;
   line-height: 28px;
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 4%;
-  background-color: #ec5242;
-}
-
-.contact-info {
-  padding-right: 4%;
-  text-align: left;
-  font-size: 1.5rem;
-  max-width: 50%;
-}
-
-.contact-img {
-  max-width: 50%;
-}
-.contact-img > img {
-  width: auto;
-  height: 300px;
-}
-
-.alumni-section {
+.creative-micronauts-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 0 5rem;
+  padding: 6rem 4rem;
 }
-.alumni-sec {
+
+.creative-text {
+  text-align: center;
+  max-width: 50vw;
+  margin-bottom: 7rem;
+}
+
+.creative-logo {
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  border: 1px solid #e9e9e9;
+}
+
+.past-summit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.past-summit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-title {
   color: #272131;
-  padding-top: 3rem;
+  text-align: center;
 }
 
-.alumni-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+.past-summit-intro {
+  padding-bottom: 32px;
+  text-align: center;
 }
 
-.alumni-pic > img {
-  border-radius: 50%;
-  box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
-  -webkit-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
-  -moz-box-shadow: 7px -8px 5px 0px rgba(236,82,66,0.66);
-}
-
-.alumni-info {
-  line-height: 22px;
-  font-weight: 300;
-  color: #6b6b6b;
-}
-
-.alumni-profile {
-  font-size: 1.2rem;
+.year {
+  font-size: 2rem;
   font-weight: 600;
-  color: #a94135;
+  color: #fff;
+  margin-top: -118px;
+}
+
+.summit-card-text {
+  font-weight: 300;
+  margin-top: -34px;
+  color: #fff;
+}
+
+.summit-card > img {
+  width: 400px;
+  height: 200px;
+}
+
+.summit-card {
+  margin-left: 26px;
+  text-align: center;
+}
+
+.overlay {
+  position: relative;
+  margin-top: -158px;
+  width: 400px;
+  height: 200px;
+  background: black;
+  opacity: 0.2;
+}
+
+.footer-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-footer {
   background-color: #272131;
   color: #fff;
   padding-bottom: 3rem;
+  padding-top: 54px;
 }
+
+.footer-logo {
+  margin-right: 48px;
+}
+
 @media (max-width: 894px) {
   .header {
     position: fixed;
@@ -433,12 +511,14 @@ hr {
     width: 100%;
     background-color: #fff;
   }
+
   #hamburger-icon {
     display: block;
     padding: 14px 28px;
   }
 
-  .top-nav, .main-nav {
+  .top-nav,
+  .main-nav {
     display: none;
   }
 
@@ -455,13 +535,13 @@ hr {
   }
 
   .summit-title {
-    font-size: 3rem;
-    max-width: fit-content;
+    font-size: 2.6rem;
+    max-width: 90%;
   }
 
   .summit-intro {
     font-size: 1.5rem;
-    max-width: max-content;
+    max-width: 90%;
   }
 
   .summit-date {
@@ -474,22 +554,26 @@ hr {
   }
 
   .program-card {
-    justify-content: flex-start;
-    flex-direction: row;
-    max-width: none;
-    width: 94%;
-    padding: 18px;
-    margin-top: 14px;
-  }
-
-  .card-title {
-    font-size: 1.5rem;
-    padding: 0 28px;
+    width: 90%;
+    grid-template-columns: 15% 15% 50%;
+    column-gap: 10%;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: left;
+    margin: 8px;
   }
 
   .program-card > p {
-    font-size: 1.5rem;
-    max-width: fit-content;
+    text-align: left;
+    margin: 0;
+  }
+
+  .see-more {
+    display: none;
+  }
+
+  .join-summit {
+    display: block;
   }
 
   .grid-column {
@@ -509,23 +593,69 @@ hr {
     font-size: 1.2rem;
   }
 
+  .more-speakers {
+    display: block;
+  }
+
+  #s125,
+  #s126,
+  #s127,
+  #s128 {
+    display: none;
+  }
+
+  .partners-section {
+    display: none;
+  }
+
   .partners-logo {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .footer-text {
-    font-size: 1.2rem;
-  }
-  
-  .contact-section {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  .footer-section {
+    display: none;
   }
 
-  .contact-img, .contact-info {
-    max-width: 100%;
-    padding: 26px;
+  .about-footer-text {
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    padding-left: 18px;
+  }
+
+  .about-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #fff;
+    color: #272131;
+  }
+
+  .about-partners {
+    display: block;
+    text-align: center;
+    padding-top: 24px;
+  }
+
+  .creative-text {
+    max-width: none;
+  }
+
+  .creative-logo {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .past-summit-container {
+    flex-direction: column;
+  }
+
+  .summit-card {
+    margin: 5%;
   }
 
   .alumni-grid {
@@ -544,7 +674,7 @@ hr {
 
 @keyframes fadeIn {
   from {
-    transform: translateY(300px);
+    transform: translateY(200px);
     opacity: 0;
   }
 
@@ -553,4 +683,3 @@ hr {
     opacity: 1;
   }
 }
-
